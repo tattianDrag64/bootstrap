@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Travel Agency</title>
+  <style>
+    /* Typography */
+    html {
+      font-size: 18px;
+    }
+
+    /* Header */
+    .bg-image {
+      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, .3)), url(imgs/Thailand.jpg) no-repeat center center fixed; /* Се използва градиентът, картината не се повтаря, разпределя се в центъра и се фиксира */
+      background-size: cover; /* Изображението се мащабира, така че да покрие напълно контейнера и да не се изкривява */
+      height: 45vh; /* Елементът заема 45% височината на прозореца на видимия браузър */
+    }
+
+    /* Background for header */
+
+    /* Sections */
+    .pink {
+      color: #f0346c;
+    }
+
+    .pink:hover {
+      color: #f0346c;
+    }
+
+    /* Променя цвета на текста при задържане на курсора */
+
+    .btn-primary {
+      background-color: #f0346c;
+    }
+
+    .btn-light {
+      background-color: #f0346c;
+      color: white;
+    }
+
+    .btn-light:hover {
+      color: #f0346c;
+    }
+
+    /* Променя цвета на текста при задържане на курсора */
+
+    /* Footer */
+    footer {
+      background-color: #f0346c;
+    }
+
+    svg {
+      fill: white;
+    }
+
+    /* Променя цвета на svg image */
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-image d-flex
+    justify-content-center
+    align-items-center
+    flex-column"> <!-- Frex позиция, която подрежда елементи в центъра на колона -->
+    <div class="container"> <!-- Подравнява съдържание -->
+      <div class="d-flex justify-content-center">
+        <ul class="nav text-uppercase"> <!-- nav - навигационната панел, text-uppercase - текстът с главни букви -->
+          <li class="nav-item"><a href="#" class="nav-link active pink" aria-current="page">Home</a></li>
+          <!-- nav-item - елементът от навигационна панел, nav-link - линкът от навигационна панел, active - състоянието на елемент е активно -->
+          <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
+          <!-- text-light - текстът е светъл -->
+          <li class="nav-item"><a href="#" class="nav-link text-light">Our package</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-light">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container px-5 pt-3"> <!-- px-5 - left и right на падинга имат размер 5, top има 3 -->
+      <div class="text-start"> <!-- text-start - текстът започва от лявата страна -->
+        <h3 class="text-light text-uppercase fst-italic">Discover your</h3><!-- fst-italic - font italic -->
+        <h1 class="text-uppercase pink">Favorite place</h1>
+        <p class="text-light">It is a long established fact that a reader will<br>
+          be distracted by the readable content of a <br>
+          page when looking at its layout.</p>
+        <p><a class="btn btn-lg btn-light text-uppercase border-0" href="#">Book now</a></p>
+        <!-- btn - кнопка,  btn-lg - голям бутон, btn-light - светлинен бутон, border-0 - без бордър -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Our packages -->
+
+  <section>
+    <div class="container pt-3">
+      <h2 class="text-uppercase">Our packages</h2>
+    </div>
+
+    <div class="container mt-3 d-flex justify-content-center
+      align-items-center">
+      <div class="row"> <!-- Мрежова система -->
+        <div class="card col-md-6 col-lg-6 col-xl-3 border-0 mb-2">
+          <!--
+          col-md-6 col-lg-6 col-xl-3 използва се за създаване на адаптивна мрежа, в която колоните променят ширината си в зависимост от размера на екрана, card - контейнер за контента -->
+          <div class="card">
+            <img class="card-img-top" src="imgs/Dubai.jpg" alt="Dubai"> <!-- 
+              card-img-top поставяне на изображение в горната част на картата -->
+            <div class="card-body"> <!-- 
+              card-body - тялото на карта -->
+              <h5 class="card-title">Dubai, UAE</h5> <!-- 
+                card-title - тайтъл на карта -->
+              <p class="card-text">3 night 2 days</p>
+              <div class="text-center"> <!-- text-center - текстът се располага в центра -->
+                <a href="#" class="btn btn-lg btn-light text-uppercase border-0 my-3 px-5">$79</a>
+                <!-- my-3 - top и bottom на марджина имат размер 3 -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card col-md-6 col-lg-6 col-xl-3 border-0 mb-2">
+          <div class="card">
+            <img class="card-img-top" src="imgs/Dubai.jpg" alt="Dubai">
+            <div class="card-body">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">3 night 2 days</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-lg btn-light text-uppercase border-0 my-3 px-5">$79</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-md-6 col-lg-6 col-xl-3 border-0 mb-2">
+          <div class="card">
+            <img class="card-img-top" src="imgs/Dubai.jpg" alt="Dubai">
+            <div class="card-body">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">3 night 2 days</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-lg btn-light text-uppercase border-0 my-3 px-5">$79</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card col-md-6 col-lg-6 col-xl-3 border-0 mb-2">
+          <div class="card">
+            <img class="card-img-top" src="imgs/Dubai.jpg" alt="Dubai">
+            <div class="card-body">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">3 night 2 days</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-lg btn-light text-uppercase border-0 my-3 px-5">$79</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container my-3 d-flex justify-content-center
+      align-items-center">
+      <div class="row">
+        <div class="container flex-column col-md-12 col-lg-12 col-xl-6 col-sm-12">
+          <div>
+            <h2 class="text-uppercase">Why we are best</h2>
+          </div>
+          <div>
+            <p>We Take Pride In Being More Than Just A Travel Agency – We Are Your Dedicated Partner In Crafting
+              Unforgettable Journeys. Experience A Level Of Personalized Service That Goes Beyond Expectations. Our
+              Travel Experts Take The Time To Understand Your Preferences, Ensuring Each Journey Is Tailored To Your
+              Unique Desires.</p>
+            <p>We Take Pride In Being More Than Just A Travel Agency – We Are Your Dedicated Partner In Crafting
+              Unforgettable Journeys. Experience A Level Of Personalized Service That Goes Beyond Expectations. Our
+              Travel Experts Take The Time To Understand Your Preferences, Ensuring Each Journey Is Tailored To Your
+              Unique Desires.</p>
+          </div>
+        </div>
+
+        <div class="container pt-3 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <img src="imgs/airplain.PNG" alt="Airplain" class="w-100"> <!-- w-100 - 
+            изображението заема цялата ширина -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="p-3 pb-5">
+    <div class="container p-3">
+      <div class="row text-light">
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <h5 class="text-uppercase">Company</h5>
+          <ul class="list-unstyled"> <!-- list-unstyled премахва на числа и маркери от списъка -->
+            <li><a href="#" class="text-light text-decoration-none">
+                About us
+              </a></li> <!-- text-decoration-none премахва ефектите на текстовия дизайн -->
+            <li><a href="#" class="text-light text-decoration-none">
+                Terms & Conditions
+              </a></li>
+            <li><a href="#" class="text-light text-decoration-none">
+                Privacy Policy
+              </a></li>
+            <li><a href="#" class="text-light text-decoration-none">
+                Help Center
+              </a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <h5 class="text-uppercase">Contact</h5>
+          <ul class="list-unstyled">
+            <li>Address: Dhaka, Bangladesh</li>
+            <li>Email: rumiaktar@gmail.com</li>
+            <li>Phone: +8801323456789</li>
+            <li class="d-flex align-items-center"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd" clip-rule="evenodd" class="m-1">
+                <path
+                  d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z" />
+              </svg>Sat-Thu (10:00 am-07:00 pm)</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4">
+          <h5 class="text-uppercase">Follow us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">
+                Facebook</a></li>
+            <li><a href="#" class="text-light text-decoration-none">
+                Linkedin
+              </a></li>
+            <li><a href="#" class="text-light text-decoration-none">
+                Instagram
+              </a></li>
+            <li><a href="#" class="text-light text-decoration-none">
+                Youtube
+              </a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
